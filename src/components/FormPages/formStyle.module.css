@@ -1,0 +1,114 @@
+.pageStyle {
+    margin: auto;
+    width: 400px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 4px 2px #f3e9e9;
+    margin-top: 180px;
+}
+
+.pageStyle h1{
+    color: var(--main-color);
+    font-size: xxx-large;
+    margin: 2px;
+}
+
+.pageStyle form{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pageStyle input{
+    font-size: 20px;
+    width: auto;
+    padding: 15px;
+    margin: 10px 0px;
+    background: transparent;
+    border: 1px solid gray;
+}
+
+.pageStyle button{
+    font-size: 25px;
+    width: auto;
+    padding: 15px;
+    margin: 15px 0px;
+    border: none;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.otherPageLink{
+    margin: 15px;
+    text-align: center;
+}
+
+.otherPageLink a{
+    color:black
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .pageStyle{
+        margin-top: 40px;
+    }
+    .pageStyle input{
+        width: 400px;
+        padding: 15px;
+        font-size: 15px;
+    }
+    .pageStyle button{
+        width: 400px;
+        padding: 10px;
+    }
+  }
+  
+@media screen and (max-width: 640px) {
+    .pageStyle {
+        padding-left: 50px;
+    }
+    .pageStyle input{
+        width: 350px;
+    }
+    .pageStyle button{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .pageStyle {
+        padding-left: 50px;
+    }
+
+    .pageStyle input{
+        width: 250px;
+    }
+    .pageStyle button{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .pageStyle{
+        padding-left: 15px;
+    }
+    .pageStyle h1{
+        font-size: xx-large;
+    }
+    .pageStyle input{
+        width: 200px;
+        padding: 10px;
+        font-size: 10px;
+        margin: 10px;
+    }
+    .pageStyle button{
+        width: 200px;
+        font-size: 15px;
+        padding: 5px;
+    }
+}

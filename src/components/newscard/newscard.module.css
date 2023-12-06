@@ -1,0 +1,42 @@
+.newsBox{
+    width: 400px;
+    margin: 15px;
+    padding: 25px;
+    background-color: white;
+    position: sticky;
+}
+
+.newsBox h2, p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.newsBox img{
+    height: 250px;
+    width: 400px;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.newsBox i{
+    font-size: x-large;
+    color: red;
+}
+.favBtn{
+    position: relative;
+    bottom: 250px;
+    left: 350px;
+}
+
+.favBtn i{
+    font-weight: bold;
+    z-index: 99;
+}
+
+.newsContent{
+    cursor: pointer;
+}

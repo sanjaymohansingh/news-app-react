@@ -1,0 +1,66 @@
+.favPage{
+    margin-top: 150px;
+}
+
+.headline{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.newsBox{
+    width: 400px;
+    margin: 15px;
+    padding: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.newsBox:hover{
+    scale: 0.9;
+    transition: all .5s;
+}
+
+.newsBox h2, p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.newsBox img{
+    height: 250px;
+    width: 400px;
+}
+
+.newsBox i{
+    font-size: x-large;
+    color: red;
+}
+
+.favoritesBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favBtn{
+    position: relative;
+    bottom: 250px;
+    left: 350px;
+}
+
+.favBtn i{
+    font-weight: bold;
+    z-index: 99;
+}
+
+.noArticles{
+    font-size: 25px;
+}
+
+.noArticles a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--main-color);
+}
