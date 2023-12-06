@@ -1,42 +1,60 @@
-.newsBox{
+.newsBox {
     width: 400px;
     margin: 15px;
     padding: 25px;
     background-color: white;
-    position: sticky;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
-.newsBox h2, p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
+.newsBox:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.newsBox img{
+.newsBox h2 {
+    font-size: 1.5rem; /* Adjusted font size for the title */
+    margin-bottom: 15px;
+}
+
+.newsBox p {
+    font-size: 1rem; /* Adjusted font size for the content */
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.publishedDate {
+    font-size: 0.8rem; /* Adjusted font size for the published date */
+    color: #888;
+}
+
+.newsBox img {
     height: 250px;
-    width: 400px;
+    width: 100%;
+    object-fit: cover;
     opacity: 0.9;
     z-index: 2;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.newsBox i{
-    font-size: x-large;
-    color: red;
-}
-.favBtn{
-    position: relative;
-    bottom: 250px;
-    left: 350px;
-}
-
-.favBtn i{
-    font-weight: bold;
+.favBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     z-index: 99;
 }
 
-.newsContent{
+.favBtn i {
+    font-weight: bold;
+    color: red;
+}
+
+.newsContent {
     cursor: pointer;
 }
+
+  
+
