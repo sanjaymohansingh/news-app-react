@@ -65,7 +65,7 @@ nav{
     width: 15%;
     border: none;
     font-size: x-large;
-    background-color: lightblue;
+    background-color: red;
 }
 
 /* Profile section */
@@ -149,10 +149,12 @@ nav i{
     padding: 10px;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     font-size: large;
     opacity: 0.9;
-    background-color: #883f3f;
+    background-color: #4267B5;
+    right: 0;
+    margin-right: 10px;
     border: 1px solid var(--main-color);
 }
 
